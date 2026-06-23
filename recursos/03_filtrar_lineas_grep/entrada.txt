@@ -1,0 +1,5 @@
+INFO arranca el programa
+ERROR no se pudo conectar
+INFO usuario registrado
+ERROR fichero no encontrado
+WARN memoria baja

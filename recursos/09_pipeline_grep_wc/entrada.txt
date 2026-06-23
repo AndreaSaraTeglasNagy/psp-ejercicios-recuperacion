@@ -1,0 +1,5 @@
+INFO uno
+ERROR fallo uno
+INFO dos
+ERROR fallo dos
+ERROR fallo tres
