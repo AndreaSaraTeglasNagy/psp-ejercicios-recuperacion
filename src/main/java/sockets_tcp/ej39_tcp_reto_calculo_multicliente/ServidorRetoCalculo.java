@@ -23,6 +23,6 @@ public class ServidorRetoCalculo {
     private static int pedirEntero(Scanner teclado, String mensaje, int defecto) {
         System.out.print(mensaje + " [" + defecto + "]: ");
         String texto = teclado.nextLine();
-        return texto.isBlank() ? defecto : Integer.parseInt(texto);
+        return texto.trim().isEmpty() ? defecto : Integer.parseInt(texto);
     }
 }

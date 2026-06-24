@@ -13,13 +13,13 @@ public class ClienteRetoCalculo {
 
         System.out.print("IP [127.0.0.1]: ");
         String ip = teclado.nextLine();
-        if (ip.isBlank()) {
+        if (ip.trim().isEmpty()) {
             ip = "127.0.0.1";
         }
 
         System.out.print("Puerto [6300]: ");
         String textoPuerto = teclado.nextLine();
-        int puerto = textoPuerto.isBlank() ? 6300 : Integer.parseInt(textoPuerto);
+        int puerto = textoPuerto.trim().isEmpty() ? 6300 : Integer.parseInt(textoPuerto);
 
         try (Socket socket = new Socket(ip, puerto);
              BufferedReader entrada = new BufferedReader(new InputStreamReader(socket.getInputStream()));
